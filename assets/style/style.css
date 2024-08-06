@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+}
+
+.root {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.header__wrapper {
+  outline: 1px solid red;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+
+  background-color: #576f35;
+  color: white;
+}
+
+/* можно задать высоту строки row 800px. Можно задать min-height секции с картинкой, см ниже */
+.main__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 800px 800px; */
+}
+
+/* тут задана мин-высота секции с картинкой */
+.main__section {
+  padding: 50px;
+  min-height: 800px;
+}
+
+.main__section_img {
+  background-image: url("../img/img_veg.png");
+  background-size: cover;
+}
+
+.main__section_accent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a3145;
+}
+
+/* organic vegetables to your diet today! */
+.main__title {
+  margin-top: 100px;
+
+  font-family: "Inter Tight", sans-serif;
+  font-size: 76px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+}
+
+/* Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you. */
+.main__text {
+  width: 472px;
+  height: 80px;
+
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* To order your vegetable basket, simply follow these easy steps */
+.main__text_title {
+  width: 450px;
+  height: 96px;
+
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+
+.main__span {
+  color: #ffffff30;
+}
+
+.main__img-wrapper {
+  background-image: url("../img/lady.png");
+  background-size: cover;
+  width: 80%;
+  height: 80%;
+}
+
+.block {
+  max-width: 1200px;
+  min-width: 300px;
+}

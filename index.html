@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Roboto+Slab:wght@600&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Veg Shop</title>
+  </head>
+  <body>
+    <!-- ссылка на макет https://www.figma.com/design/ikTFWn9SY4f8gtIcicuP1A/%D0%BE%D0%B2%D0%BE%D1%89%D0%B8?node-id=0-1&t=L1NVXhanXEO12yT2-0 -->
+
+    <!-- доп обёртка root для того, чтобы header (absolute) наложить на main, он же root (relative)-->
+    <div class="root">
+      <header class="header">
+        <!-- доп класс block недаёт контенту разъехаться по экрану. Ширина 1200 -->
+        <div class="header__wrapper block">
+          <a href="#" class="header__link-logo">
+            <img src="/assets/img/logo.png" alt="logo" class="header__logo" />
+          </a>
+        </div>
+      </header>
+
+      <!-- main даёт бесконечные"уши" на экране -->
+      <main class="main">
+        <!-- доп класс block недаёт контенту разъехаться по экрану. Ширина 1200 -->
+        <div class="main__wrapper block">
+          <div class="main__section">
+            <h1 class="main__title">organic vegetables to your diet today!</h1>
+            <p class="main__text">
+              Our expertly curated vegetable baskets are made with the freshest,
+              highest quality vegetables available. Fresh Harvest Box has got
+              you covered. Fresh, high-quality vegetables in expertly curated
+              vegetable baskets delivered to you.
+            </p>
+          </div>
+          <div class="main__section main__section_img"></div>
+          <div class="main__section main__section_accent">
+            <div class="main__img-wrapper"></div>
+          </div>
+
+          <div class="main__section">
+            <p class="main__text main__text_title">
+              To order your
+              <span class="main__span">vegetable</span> basket, simply follow
+              these
+              <span class="main__span">easy steps</span>
+            </p>
+            <p class="main__text">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
